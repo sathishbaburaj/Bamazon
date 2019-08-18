@@ -69,7 +69,7 @@ var shopping = function() {
           inquirer
             .prompt({
               name: "quantity",
-              type: "iput",
+              type: "input",
               message: "How many items would you like to purchase?"
             })
             .then(function(answer1) {

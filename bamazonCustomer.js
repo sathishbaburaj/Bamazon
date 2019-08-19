@@ -83,15 +83,14 @@ var shopping = function() {
                 shopping();
               } else {
                 console.log("");
-                console.log(res[0].products_name + "purchased");
-                console.log(quantity + "qty@ $" + res[0].price);
+                console.log(res[0].products_name + " purchased");
+                console.log(quantity + " quamtity @ $" + res[0].price);
 
                 var newQuantity = res[0].stock_quantity - quantity;
+                // console.log(newQuantity);
                 connection.query(
-                  "UPDATE products SET stock_quantity =" +
-                    newQuantity +
-                    "WHERE id =" +
-                    res[0].id,
+                  "UPDATE products SET stock_quantity =? WHERE id =?",[ newQuantity,res[0].id],
+                   
                   function(err, resUpdate) {
                     if (err) throw err;
                     console.log("");

@@ -4,7 +4,7 @@ Bamazon is like Amazon storefront app. This app will interact with bamazon datab
 
 
 
-### This App is built With following npm Installations 
+### This App is built With following npm Installations  and Programming languages
 
 * [Node.js] (https://nodejs.org/en/)
 

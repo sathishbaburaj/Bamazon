@@ -1,3 +1,4 @@
+// Dependencies
 var mysql = require("mysql");
 var inquirer = require("inquirer");
 var Table = require("cli-table2");
@@ -10,9 +11,13 @@ var connection = mysql.createConnection({
   port: 3306
 });
 
+// Creating connection to the database
+
 connection.connect(function(err) {
   if (err) throw err;
 });
+
+// Adding function to display the products available in the database
 
 var display = function() {
   connection.query("SELECT * FROM products", function(err, res) {
@@ -22,7 +27,7 @@ var display = function() {
     console.log("------------------------------------------------------------");
     console.log("");
     console.log("Find your products below");
-
+// using the npm cli-table2 to display the products in a table format
     var table = new Table({
       head: ["Product Id", "Product Descrioption", "Cost($CAD)"],
       colWidths: [12, 50, 12],

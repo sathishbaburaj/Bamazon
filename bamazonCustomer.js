@@ -21,11 +21,11 @@ var display = function() {
     console.log("Welcome to Bamazon");
     console.log("------------------------------------------------------------");
     console.log("");
-    console.log("Find your product below");
+    console.log("Find your products below");
 
     var table = new Table({
-      head: ["Product Id", "Product Descrioption", "Cost"],
-      colWidths: [12, 50, 8],
+      head: ["Product Id", "Product Descrioption", "Cost($CAD)"],
+      colWidths: [12, 50, 12],
       colAligns: ["center", "left", "right"],
       style: {
         head: ["aqua"],
@@ -76,9 +76,9 @@ var shopping = function() {
               var quantity = answer1.quantity;
               if (quantity > res[0].stock_quantity) {
                 console.log(
-                  "Sorry we have" +
+                  "Sorry we have " +
                     res[0].stock_quantity +
-                    "tems of the selected quantity"
+                    " items of the selected quantity"
                 );
                 shopping();
               } else {

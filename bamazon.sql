@@ -12,7 +12,7 @@ stock_quantity int(10) NOT NULL
 );
 SELECT * FROM products;
 INSERT INTO products (id,products_name,department_id,price,stock_quantity)
-VALUES (1,"Eho dot",1,34.99,100),
+VALUES (1,"Echo dot",1,34.99,100),
 (2,"Micolindun V3blue Gaming Headset for PS4 Xbox One",1,32.99,25),
 (3,"LEGO Creator 3in1 Underwater Robot",2,19.99,15),
 (4,"Head Accel Road Bike",4,499.99,20),

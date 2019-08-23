@@ -34,6 +34,9 @@ Bamazon is like Amazon storefront app. This app will interact with bamazon datab
 
 
 ![](Images/Purchase1.JPG)
+
+3. Showing the Customer if there is insufficinet quantity in the database.
+
 ![](Images/Quantity.JPG)
 
 

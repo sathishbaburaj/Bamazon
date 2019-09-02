@@ -7,7 +7,8 @@ id INT(10) NOT NULL AUTO_INCREMENT ,
 products_name VARCHAR(50) NOT NULL,
 department_id INT(10) NOT NULL,
 price decimal(10,2) NOT NULL,
-stock_quantity int(10) NOT NULL
+stock_quantity int(10) NOT NULL,
+primary key(id)
 
 );
 SELECT * FROM products;

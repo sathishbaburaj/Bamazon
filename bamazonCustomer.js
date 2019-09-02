@@ -86,7 +86,15 @@ var shopping = function() {
                     " items of the selected quantity"
                 );
                 shopping();
-              } else {
+              } else if(quantity<=0){
+
+                console.log(
+                  "Please enter a positive number to order"                    
+                );
+                shopping();
+
+              } 
+              else {
                 console.log("");
                 console.log(res[0].products_name + " purchased");
                 console.log(quantity + " quamtity @ $" + res[0].price);
